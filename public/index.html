@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--==== favicon css ====-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Test Works</title>
+
+    <!-- vendor css files -->
+
+    <!--==== bootstrap css ====-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+  <body>
+    
+    <!-- start header area -->
+    <header>
+
+      <!-- start mid-menu area -->
+      <section class="home1 mid-menu">
+          <div class="container ">
+              <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-2 col-sm-6 col-6">
+                      <div class="logo">
+                          <a href="#!">
+                            <h1>Logo</h1>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-6 col-6 offset-7">
+                      <div class="notification">
+                          <ul class="d-flex justify-content-end">
+                          
+                              <li>
+                                  <div class="dropdown">
+                                      
+                                      <button id="show-card1" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <h5>Basket</h5>
+                                          <span class="quantity">01</span>
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <div class="heading d-flex justify-content-between">
+                                              <h5 class="item-count"></h5>
+                                              <a href="#!">view cart</a>
+                                          </div>
+                                          <ul class="procut-items">
+                                             
+                                          </ul>
+                                          <div class="total d-flex justify-content-between">
+                                              <p>total</p>
+                                              <p class="total-amount">$499.00</p>
+                                          </div>
+                                          <div class="check">
+                                              <a href="#!" class="button-style1">checkout <span class="btn-dot"></span></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- end mid-menu area -->
+
+  </header>
+  <!-- end header area -->
+       <!-- start collection area -->
+       <section class="home1 collection">
+        <div class="container">
+            <div class="row product-items"></div>
+        </div>
+    </section>
+    <!-- end collection area -->
+
+    <script>
+      // Javascript api call form server side
+      //   fetch('http://localhost:8080/products')
+      //     .then((response) => response.json())
+      //     .then((data) => console.log(data))
+    </script>
+    <!--==== bootstrap min js ====-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
